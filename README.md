@@ -1,0 +1,5 @@
+Nonlinear Model Predictive Control strategy for traversal (aerial physical interaction) with compliant obstacles.
+
+The controller node needs to be included in a control loop. It has to subscribe to a state estimator (drone's full state can be obtained with a motion capture system or, like in our case, from a tracking camera) and to a force sensor (in our case Medusa F/T sensor from Bota System AG https://www.botasys.com/force-torque-sensors/medusa). We suggest to filter the force sensor readings to have smoother measurements. 
+The controller node send thrust and attitude commands to the low-level controller. The MPC part is based on ACADO and qpoases, while the control architecture is built upon https://github.com/uzh-rpg/rpg_quadrotor_control, where the controller is used in an autopilot fashion.
+The controller node further need to receive a reference trajectory command, and can be started with a rosservice call on the service 'follow_trajectory', where the speed has to be specified. Parameters of the opitmization-based controller can be changed, and are loaded when launched.
