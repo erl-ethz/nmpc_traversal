@@ -1,0 +1,9 @@
+{
+  "max_thrust": 20,
+  "max_omega": 40,
+  "max_inclination": 20,
+
+  "omega_contraints": false,
+  "euler_angles_constraints": true,
+  "thrust_constraint": true
+}

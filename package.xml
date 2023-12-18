@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>mpc</name>
+  <version>0.0.0</version>
+  <description>Model Predictive Control with Impedance behavior</description>
+
+  <maintainer email="eaucone@ethz.ch">Daniele Morra</maintainer>
+
+
+  <license>GNU GPL</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>catkin_simple</buildtool_depend>
+
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <depend>autopilot</depend>
+  <depend>geometry_msgs</depend>
+  <depend>quadrotor_common</depend>
+  <depend>quadrotor_msgs</depend>
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>trajectory_msgs</depend>
+  
+  <export>
+  </export>
+</package>

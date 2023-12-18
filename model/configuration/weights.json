@@ -1,0 +1,6 @@
+{
+  "q_dist": 1,
+  "q_progression": 1e-1,
+  "q_smoothness": 1e-1,
+  "q_final_condition": 1
+}
