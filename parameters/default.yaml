@@ -1,0 +1,28 @@
+# Cost on states
+Q_pos_xz:     0.1           # Cost for horizontal position error # lateral and vertical
+Q_velocity_xz:   0.1          # Cost for velocity error xy_plane # lateral and vertical
+Q_velocity_y:   1          # Cost for velocity error z_axis # forward
+Q_angular: 0.1                  # Cost on angular velocity 
+Q_yaw: 0.1                      # Cost on yaw angle
+Q_torque: 0.01               # Cost for torque
+Q_thrust: 0.01              # Cost for thrust
+Q_dynamics_dismatch: 0.1      # Cost for error between real and impedance dynamics
+
+QN_pos_xz:   0.1   # Cost for end position reach
+QN_vel_z:    10
+
+# Limits for inputs
+max_phi_theta:  20       # [degrees]
+min_thrust: 0.1            # in g-values
+max_thrust: 2            # in g-values
+max_omega_xy:  3           # rad/s
+max_omega_yaw: 1          # rad/s
+
+# Print information such as timing to terminal
+print_info:       false
+
+# Step of MPC-horizon to take as output
+index_step: 2       # [int]
+
+# Interaction
+threshold_force_interaction: 0.03     #[N]

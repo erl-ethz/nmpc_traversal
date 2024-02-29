@@ -1,0 +1,24 @@
+{
+  "M": 1.1,
+  "I_x": 0.0065,
+  "I_y": 0.0068,
+  "I_z": 0.0124,
+  "K_x": 2,
+  "K_y": 2,
+  "K_z": 10,
+  "D_x": 1,
+  "D_y": 1,
+  "D_z": 5,
+
+  "t_start": 0,
+  "t_end": 1,
+
+  "control_active": true,
+  "omega_plot": false,
+  "desired_attitude_thrust_plot": true,
+  "drone_velocity_plot": false,
+  "drone_acceleration_plot": false,
+  "desired_position_plot": true,
+  "desired_velocity_plot": true,
+  "desired_acceleration_plot": false
+}
